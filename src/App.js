@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import RegistrationForm from "./RegistrationForm";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <p>
           Welcome to ChatApp
         </p>
+          <RegistrationForm ></RegistrationForm>
       </header>
     </div>
   );
