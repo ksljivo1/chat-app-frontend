@@ -1,0 +1,40 @@
+/*.sign_in_option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe0cc;;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px white;
+    max-width: 400px;
+    margin: auto;
+}*/
+
+.sign-in-option {
+    background: linear-gradient(to right, rgba(238,174,202,1), rgba(148,187,233,1));
+    border-radius: 25px;
+    align-content: center;
+    width: 400px;
+    height: 450px;
+
+}
+
+.sign_in_option__btn {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign_in_option__btn:hover {
+    background-color: #45a049;
+}
+
+.sign-in-option__title {
+    color: black;
+}

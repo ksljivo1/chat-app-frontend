@@ -1,15 +1,14 @@
 import React from "react";
-import "./RegistrationForm.css";
+import "./LoginForm.css"
 
-export default function RegistrationForm() {
+export default function LoginForm() {
     return (
-        <div className="RegistrationForm">
-            <h2 style={{color: "black"}}>Create account</h2>
+        <div className="LoginForm">
+            <h2 style={{color: "black"}}>Log into Your Account</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="username" placeholder="Enter Name"/>
                 <input type="email" name="email" placeholder="Enter Email"/>
                 <input type="password" name="password" placeholder="Enter Password"/>
-                <button type="submit">Register</button>
+                <button type="submit">Log in</button>
             </form>
         </div>
     );
