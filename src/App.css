@@ -13,21 +13,11 @@ body, .App {
   pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .FormContainer {
-  /*border: 5px solid blue;*/
-  display: flex;
-  /* Optional: Adds space between the forms */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   background-color: whitesmoke;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.55);

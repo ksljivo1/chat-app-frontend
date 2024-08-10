@@ -1,22 +1,88 @@
-/*.sign_in_option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffe0cc;;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 3px white;
-    max-width: 400px;
-    margin: auto;
-}*/
+:root {
+    --starting-color: #512da8;
+    --mid-color: #577db7;
+    --final-color: rgb(12, 33, 55);
+}
 
 .sign-in-option {
-    background: linear-gradient(to right, rgba(238,174,202,1), rgba(148,187,233,1));
+    background: linear-gradient(to right, var(--starting-color), var(--mid-color), var(--final-color));
+    background-size: 200%;
+    background-position: left;
     border-radius: 25px;
     align-content: center;
     width: 400px;
     height: 450px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+    /*animation: slideLeft-sign-in-option 1s ease-in-out forwards;*/
+}
 
+@keyframes signInToolbarDisappears {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes signInToolbarAppears {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes signUpToolbarDisappears {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes signUpToolbarAppears {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes slideRightSignInOption {
+    from {
+        transform: translateX(0px);
+
+        background-position: left; /* Start the gradient from the left */
+    }
+    to {
+        transform: translateX(400px);
+        background-position: right; /* End the gradient on the right */
+    }
+}
+
+@keyframes slideLeftSignInOption {
+    from {
+        transform: translateX(400px);
+        background-position: right; /* Start the gradient from the left */
+    }
+    to {
+        transform: translateX(0px);
+        background-position: left; /* End the gradient on the right */
+    }
 }
 
 .sign_in_option__btn {
@@ -37,4 +103,21 @@
 
 .sign-in-option__title {
     color: black;
+}
+
+.option_container {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.sign_in_option_container {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.sign_up_option_container {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    opacity: 0;
+    visibility: hidden;
 }

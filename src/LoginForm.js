@@ -24,9 +24,10 @@ async function handleSubmit(event) {
     formData.forEach((value, key) => {
         data[key] = value;
     });
+    data["username"] = "ignored";
 
     try {
-        const response = await fetch('http://localhost:8080/api/v1/users', {
+        const response = await fetch('http://localhost:8080/api/v1/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -35,9 +36,9 @@ async function handleSubmit(event) {
         });
 
         if (response.ok) {
-            alert('Registration successful');
+            alert('Login successful');
         } else {
-            alert('Registration failed');
+            alert('Login failed');
         }
     }
     catch (error) {

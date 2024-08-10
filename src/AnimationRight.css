@@ -1,0 +1,28 @@
+/*.RegistrationForm {
+    animation: slideLeftRegistrationForm 1s ease-in-out forwards;
+
+}*/
+
+.moveSignInRightwards {
+    animation: slideRightSignInOption 1s ease-in-out forwards;
+}
+
+.moveSignInLeftwards {
+    animation: slideLeftSignInOption 1s ease-in-out forwards;
+}
+
+.signInAppears {
+    animation: signInToolbarAppears 1s forwards;
+}
+
+.signInDisappears {
+    animation: signInToolbarDisappears 1s forwards;
+}
+
+.signUpAppears {
+    animation: signUpToolbarAppears 1s forwards;
+}
+
+.signUpDisappears {
+    animation: signUpToolbarDisappears 1s forwards;
+}
