@@ -1,8 +1,3 @@
-/*.RegistrationForm {
-    animation: slideLeftRegistrationForm 1s ease-in-out forwards;
-
-}*/
-
 .moveSignInRightwards {
     animation: slideRightSignInOption 1s ease-in-out forwards;
 }
@@ -25,4 +20,12 @@
 
 .signUpDisappears {
     animation: signUpToolbarDisappears 1s forwards;
+}
+
+.logoRollsRightwards {
+    animation: rollRight 2s ease-in-out forwards;
+}
+
+.logoRollsLeftwards {
+    animation: rollLeft 2s ease-in-out forwards;
 }

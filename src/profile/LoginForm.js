@@ -8,7 +8,7 @@ export default function LoginForm() {
             <form onSubmit={handleSubmit}>
                 <input type="email" name="email" placeholder="Enter Email"/>
                 <input type="password" name="password" placeholder="Enter Password"/>
-                <button type="submit">Log in</button>
+                <button type="submit" className="button">Log in</button>
             </form>
         </div>
     );

@@ -9,7 +9,7 @@ export default function RegistrationForm() {
                 <input type="text" name="username" placeholder="Enter Name"/>
                 <input type="email" name="email" placeholder="Enter Email"/>
                 <input type="password" name="password" placeholder="Enter Password"/>
-                <button type="submit">Register</button>
+                <button type="submit" className="button">Register</button>
             </form>
         </div>
     );

@@ -1,7 +1,7 @@
 :root {
-    --starting-color: #512da8;
-    --mid-color: #577db7;
-    --final-color: rgb(12, 33, 55);
+    --starting-color: teal;
+    --mid-color: magenta;
+    --final-color: teal;
 }
 
 .sign-in-option {
@@ -15,7 +15,6 @@
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 5;
-    /*animation: slideLeft-sign-in-option 1s ease-in-out forwards;*/
 }
 
 @keyframes signInToolbarDisappears {
@@ -85,20 +84,21 @@
     }
 }
 
-.sign_in_option__btn {
-    width: 100%;
+.sign-in-option__btn, .sign-up-option__btn {
+    width: 50%;
     padding: 10px;
     background-color: transparent;
     color: white;
-    border: white;
-    border-radius: 25px;
+    border: white solid;
+    border-radius: 70px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-size 200ms, scale 200ms ease-in;
 }
 
-.sign_in_option__btn:hover {
-    background-color: #45a049;
+.sign-in-option__btn:hover, .sign-in-option__btn:focus, .sign-up-option__btn:hover, .sign-up-option__btn:focus {
+    background-size: 200%;
+    scale: 1.05;
 }
 
 .sign-in-option__title {
@@ -120,4 +120,22 @@
     grid-column: 1/2;
     opacity: 0;
     visibility: hidden;
+}
+
+@keyframes rollRight {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+@keyframes rollLeft {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-1080deg);
+    }
 }

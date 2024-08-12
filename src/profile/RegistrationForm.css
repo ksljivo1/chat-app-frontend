@@ -42,18 +42,19 @@ input {
     font-size: 16px;
 }
 
-button {
+.button {
     width: 60%;
     padding: 10px;
-    background-color: #009688;
+    background: linear-gradient(to right, teal, magenta);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 70px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-size 200ms, scale 200ms ease-in;
 }
 
-button:hover {
-    background-color: #00796b;
+.button:hover, button:focus {
+    background-size: 200%;
+    scale: 1.05;
 }

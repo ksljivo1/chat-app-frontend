@@ -7,10 +7,11 @@
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 2;
-    transition: all 1s ease-in-out;
-    /* Start off-screen to the left */
-     /* Initially invisible */
-    /*animation: slideIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+.button:hover, button:focus {
+    background-size: 200%;
+    scale: 1.05;
 }
 
 @keyframes slideInLoginForm {

@@ -1,11 +1,18 @@
 body, .App {
   text-align: center;
-  background: darkgray;
-  height: 100vh; /* Ensure the height covers the full viewport */
+  height: 100vh;
   margin: 0;
-  display: flex; /* Center the content within the App container */
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.App {
+  background-color: transparent;
+}
+
+body {
+  background: radial-gradient(grey, dimgray, darkslategray);
 }
 
 .App-logo {

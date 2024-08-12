@@ -15,8 +15,4 @@ function App() {
   );
 }
 
-/*document.getElementByClassName('sign-in-option__btn').onclick = () => {
-    document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: 'AnimationRight.css' }));
-};*/
-
 export default App;
